@@ -36,9 +36,25 @@
         </div>
     </div>
 
-    <a href="{{ route('produtos.index') }}" class="btn btn-primary mt-4">
-        Ver produtos
-    </a>
+    <div class="mt-4 d-flex gap-2">
+
+        <a href="{{ route('produtos.index') }}" class="btn btn-primary">
+            📦 Ver produtos
+        </a>
+
+        <a href="{{ url('/relatorio') }}" class="btn btn-dark">
+            📊 Relatórios
+        </a>
+
+        <a href="{{ url('/relatorio/saidas') }}" class="btn btn-danger">
+            📤 Saídas
+        </a>
+
+        <a href="{{ url('/relatorio/entradas') }}" class="btn btn-success">
+            📥 Entradas
+        </a>
+
+    </div>
 
 </div>
 </body>
